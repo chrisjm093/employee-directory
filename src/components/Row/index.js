@@ -1,19 +1,23 @@
 import React from "react";
 import "./style.css";
+import API from "../utils/API"
 
-function Row(){
-  return(
+function Row( props ){
+  {props.users.map(user =>{
+
+    return(
+
     <tr>
-      <th scope="row">1</th>
-      <td>John</td>
-      <td>Doe</td>
-      <td>555-1234</td>
-      <td>john.doe@work.com</td>
-      <td>101</td>
-      <td>Cloud Computing</td>
-      <td>Cloud Architect</td>
+      <th scope="row"></th>
+      <td>{user.name.first}</td>
+      <td>{user.name.last}</td>
+      <td>{user.phone}</td>
+      <td>{user.email}</td>
+      <td>{user.location.city}, {user.location.state}</td>
     </tr>
-  )
+    
+    )})
+  }
 }
 
 export default Row;
