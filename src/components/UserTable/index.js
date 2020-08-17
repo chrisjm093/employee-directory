@@ -1,6 +1,7 @@
 import React from "react";
 import { Table } from "react-bootstrap";
 
+
 function UserTable(props, users, search, updateSort,  ){
   
   const filterBySearch = user =>{
@@ -45,12 +46,8 @@ function UserTable(props, users, search, updateSort,  ){
           <th scope="col">Phone #</th>
           <th scope="col">Email</th>
           <th scope="col">Location 
-          <button onClick={() => props.updateSort("asc")}>
-            Ascending
-          </button>
-          <button onClick={() => props.updateSort("desc")}>
-            Descending
-          </button>
+          <i className="fas fa-sort-up" onClick={() => props.updateSort("asc")} />
+          <i className="fas fa-sort-down" onClick={() => props.updateSort("desc")} />
           </th>
           
         </tr>

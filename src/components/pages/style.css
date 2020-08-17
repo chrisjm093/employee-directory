@@ -1,0 +1,12 @@
+.container {
+  margin-top: 5px;
+}
+
+body {
+  background-color: rgb(131, 209, 148);
+}
+
+h2 {
+  text-align: center;
+  font-weight: bolder;
+}

@@ -2,7 +2,8 @@ import React from "react";
 import UserTable from "../UserTable";
 import API from "../utils/API";
 import SearchForm from "../SearchForm";
-import {Container, Card} from "react-bootstrap"
+import {Container, Card} from "react-bootstrap";
+import "./style.css";
 
 
 class Directory extends React.Component{
